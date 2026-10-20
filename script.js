@@ -15,28 +15,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = typeof PORTFOLIO_DATA !== 'undefined' ? PORTFOLIO_DATA : null;
 
   // --------------------------------------------------------------------------
-  // 1. Theme Management (Dark / Light Mode)
+  // 1. Theme Management (Consistently Midnight Dark Theme)
   // --------------------------------------------------------------------------
-  const themeToggle = document.getElementById('themeToggle');
   const htmlRoot = document.documentElement;
+  htmlRoot.setAttribute('data-theme', 'dark');
 
-  const savedTheme = localStorage.getItem('portfolio-theme');
-  const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-
-  if (savedTheme) {
-    htmlRoot.setAttribute('data-theme', savedTheme);
-  } else if (systemPrefersLight) {
-    htmlRoot.setAttribute('data-theme', 'light');
-  } else {
-    htmlRoot.setAttribute('data-theme', 'dark');
+  // Purge any legacy light-theme state from localStorage
+  if (localStorage.getItem('portfolio-theme') === 'light') {
+    localStorage.removeItem('portfolio-theme');
   }
 
+  const themeToggle = document.getElementById('themeToggle');
   if (themeToggle) {
+    // If clicked, toggle subtle ambient atmospheric glow mode
     themeToggle.addEventListener('click', () => {
-      const currentTheme = htmlRoot.getAttribute('data-theme') || 'dark';
-      const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      htmlRoot.setAttribute('data-theme', targetTheme);
-      localStorage.setItem('portfolio-theme', targetTheme);
+      document.body.classList.toggle('cinematic-glow');
     });
   }
 

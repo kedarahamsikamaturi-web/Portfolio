@@ -8,12 +8,20 @@ Showcasing the academic achievements, technical competencies, software projects,
 
 ## 🎨 Visual Identity & Architecture
 
-- **Visual Theme**: Deep midnight navy & near-black (`#030712`, `#060b18`) accented with electric violet (`#8b5cf6`), soft lavender (`#c084fc`), and restrained cyan (`#22d3ee`).
+- **Visual Theme — Midnight Black & Electric Purple**:
+  - Primary Background: `#0B0B12`
+  - Secondary Background: `#11111B`
+  - Card Background: `#171725`
+  - Electric Purple Accent: `#8B5CF6`
+  - Soft Lavender Highlight: `#C4B5FD`
+  - Primary Text: `#F8FAFC`
+  - Secondary Text: `#A1A1B5`
+  - Borders: `rgba(196, 181, 253, 0.15)`
+- **Consistently Dark & Cinematic**: Pure midnight aesthetic without white backgrounds or unwanted light-mode sections.
 - **Data-Driven Architecture (`data.js`)**: All personal profile info, skills, projects, case studies, verified certifications, and learning journey milestones are stored in a centralized, easily editable data file.
 - **Dedicated Case Study Modals**: Interactive modals that open deep-dive architectural overviews for Weather Now, CollegeDock, and Bhoomi Sahayak.
 - **Interactive Resume Viewer**: Built-in formatted resume preview sheet with one-click print and save-as-PDF support.
 - **Accessible Custom Cursor**: Fluid trailing ring active strictly on desktop devices with fine pointers, automatically disabled on touch devices and respecting user reduced-motion preferences.
-- **Theme Persistence**: Instant Dark and Light mode toggle with system preference detection and `localStorage` caching.
 - **Zero Heavy Dependencies**: Pure vanilla HTML5, CSS3, and ES6+ JavaScript — runs instantly without needing Node.js, npm, or complex build tooling.
 
 ---
