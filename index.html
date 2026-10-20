@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>M. Kedara Hamsika — Computer Science Student & Aspiring Software Developer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal portfolio of M. Kedara Hamsika, Second-Year Computer Science and Engineering student at Ramachandra College of Engineering, Eluru (CGPA: 9.3/10). Python learner, developer, and builder." />
+  <meta name="keywords" content="Kedara Hamsika, M. Kedara Hamsika, Portfolio, Computer Science, Ramachandra College of Engineering, Python, Java, DSA, Web Developer, WeatherNow, CollegeDock, Bhoomi Sahayak" />
+  <meta name="author" content="M. Kedara Hamsika" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="M. Kedara Hamsika — Portfolio" />
+  <meta property="og:description" content="I turn curiosity into code. Second-Year CSE Student (CGPA: 9.3) building practical software projects and exploring Python, DSA, and AI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta property="og:url" content="https://kedarahamsikamaturi-web.github.io/portfolio/" />
+
+  <!-- Favicon: Inline SVG Developer Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230a0f1d'/><text x='50' y='64' font-family='monospace' font-size='44' font-weight='bold' fill='%23a855f7' text-anchor='middle'>KH</text></svg>" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Background Lighting & Mesh Elements -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Accessible Trailing Cursor (Active only on non-touch fine pointer devices) -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Kedara Hamsika Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Kedara Hamsika</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#journey" class="nav-link">Exploring</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button id="themeToggle" class="icon-btn theme-toggle-btn" aria-label="Toggle dark and light theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle navigation drawer" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <div class="drawer-header">
+        <span class="brand-logo">&lt;Kedara Hamsika /&gt;</span>
+        <button id="drawerCloseBtn" class="icon-btn" aria-label="Close navigation menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="#home" class="drawer-link">Home</a></li>
+        <li><a href="#about" class="drawer-link">About Me</a></li>
+        <li><a href="#skills" class="drawer-link">Skills</a></li>
+        <li><a href="#projects" class="drawer-link">Projects</a></li>
+        <li><a href="#journey" class="drawer-link">Exploring</a></li>
+        <li><a href="#achievements" class="drawer-link">Achievements</a></li>
+        <li><a href="#education" class="drawer-link">Education</a></li>
+        <li><a href="#contact" class="drawer-link">Contact</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <div class="drawer-academic-badge">
+          <span class="drawer-cgpa">⭐ CGPA: 9.3 / 10.0</span>
+          <span class="drawer-college">Ramachandra College of Engg, Eluru</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ========================================================================
+         HERO SECTION ("I turn curiosity into code.")
+         ======================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <!-- Hero Text Column -->
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="status-pulse-dot"></span>
+            <span id="heroStatusText">CSE Student · Building and Learning</span>
+          </div>
+
+          <h1 class="hero-headline">
+            I turn curiosity <br />
+            <span class="gradient-text">into code.</span>
+          </h1>
+
+          <div class="hero-author-row">
+            <span class="author-label">Created by</span>
+            <span class="author-name" id="heroAuthorName">Kedara Hamsika</span>
+            <span class="author-badge">2nd Year CSE · CGPA 9.3</span>
+          </div>
+
+          <p class="hero-bio" id="heroBioText">
+            Second-year Computer Science and Engineering student at <strong>Ramachandra College of Engineering, Eluru</strong> with an academic CGPA of <strong>9.3/10</strong>. Actively learning Python, strengthening Data Structures & Algorithms, and engineering practical web and technology projects that solve real-world problems.
+          </p>
+
+          <!-- Call To Action Group -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <button id="resumeBtn" class="btn btn-secondary">
+              <span>View Resume</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Social Links Row -->
+          <div class="hero-social-row">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/kedarahamsikamaturi-web" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Academic Stat Indicators -->
+          <div class="hero-stats-grid">
+            <div class="stat-box">
+              <div class="stat-number">9.3</div>
+              <div class="stat-meta">Academic CGPA</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">Python</div>
+              <div class="stat-meta">HackerRank Certified</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">2029</div>
+              <div class="stat-meta">Expected B.Tech CSE</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Creative Visual: Glassmorphic Layered Developer Card -->
+        <div class="hero-visual">
+          <div class="hero-visual-frame">
+            <!-- Ambient Card Glow -->
+            <div class="hero-card-glow" aria-hidden="true"></div>
+
+            <div class="hero-developer-card">
+              <div class="card-top-bar">
+                <span class="card-status-dot"></span>
+                <span class="card-status-title">developer.config.ts</span>
+                <span class="card-edition-tag">CSE '29</span>
+              </div>
+
+              <!-- Profile Image / Avatar container -->
+              <div class="profile-media-box">
+                <img 
+                  src="assets/profile.jpg" 
+                  alt="M. Kedara Hamsika" 
+                  class="profile-media-img"
+                  onerror="this.onerror=null; this.parentElement.classList.add('use-avatar-fallback'); this.style.display='none';"
+                />
+                <div class="avatar-fallback-box" aria-hidden="true">
+                  <span>KH</span>
+                </div>
+                <div class="media-floating-badge">
+                  <span>Ramachandra College of Engg</span>
+                </div>
+              </div>
+
+              <!-- Floating Live Code Panel -->
+              <div class="floating-code-panel">
+                <div class="code-panel-header">
+                  <div class="window-controls">
+                    <span class="ctrl red"></span>
+                    <span class="ctrl yellow"></span>
+                    <span class="ctrl green"></span>
+                  </div>
+                  <span class="panel-filename">profile.json</span>
+                </div>
+                <pre class="code-panel-content"><code>{
+  <span class="c-key">"name"</span>: <span class="c-val">"M. Kedara Hamsika"</span>,
+  <span class="c-key">"cgpa"</span>: <span class="c-num">9.3</span>,
+  <span class="c-key">"certified"</span>: <span class="c-val">"HackerRank Python"</span>,
+  <span class="c-key">"exploring"</span>: [<span class="c-val">"Python"</span>, <span class="c-val">"DSA"</span>, <span class="c-val">"AI/IoT"</span>]
+}</code></pre>
+              </div>
+
+              <!-- Academic Distinction Pill -->
+              <div class="achievement-floating-badge">
+                <div class="badge-icon">⭐</div>
+                <div class="badge-text">
+                  <span class="badge-headline">Academic Distinction</span>
+                  <span class="badge-sub">CGPA: 9.3 / 10.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ABOUT ME SECTION
+         ======================================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Academic Journey & Engineering Mindset</h2>
+          <p class="section-subtitle">Dedicated to mastering computer science principles through hands-on projects, rigorous problem-solving, and continuous learning.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Biography Text -->
+          <div class="about-bio-col">
+            <h3 class="about-heading">
+              Hello! I'm <span class="gradient-text">Kedara Hamsika</span>
+            </h3>
+            <p>
+              I am a second-year <strong>Computer Science and Engineering</strong> student at <strong>Ramachandra College of Engineering, Eluru</strong> with a consistent academic record reflected in my <strong>9.3 / 10.0 CGPA</strong>.
+            </p>
+            <p>
+              My interest in software development began with fundamental programming in C, Java, and Python. Recently, I earned my <strong>HackerRank Python (Basic) Skill Certification</strong> in October 2026, which solidified my enthusiasm for data manipulation and algorithmic thinking. I treat coding as a continuous discipline: dissecting complex problems into clear, modular logic.
+            </p>
+            <p>
+              My career aspiration is to evolve as a well-rounded software engineer. I am actively seeking project collaborations, academic challenges, and internship opportunities where I can apply my problem-solving mindset, contribute to collaborative teams, and build reliable software that delivers genuine utility.
+            </p>
+
+            <div class="about-focus-cards">
+              <div class="focus-card">
+                <div class="focus-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="focus-title">Academic Discipline</h4>
+                  <p class="focus-desc">Maintaining a <strong>9.3 CGPA</strong> across foundational coursework in algorithms, data structures, and mathematics.</p>
+                </div>
+              </div>
+
+              <div class="focus-card">
+                <div class="focus-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="focus-title">Practical Project Mindset</h4>
+                  <p class="focus-desc">Building real-world applications including public API dashboards (Weather Now) and smart agriculture concepts (Bhoomi Sahayak).</p>
+                </div>
+              </div>
+
+              <div class="focus-card">
+                <div class="focus-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="focus-title">Peer Leadership & Outreach</h4>
+                  <p class="focus-desc">Active participant in RCE Ambassador 2K26 initiatives and state-level innovation competitions (RTIH AP).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Snapshot Profile Card -->
+          <div class="about-card-col">
+            <div class="snapshot-card">
+              <div class="snapshot-header">
+                <h3 class="snapshot-title">Student Profile</h3>
+                <span class="snapshot-badge">Verified Record</span>
+              </div>
+
+              <ul class="snapshot-list">
+                <li>
+                  <span class="snap-label">Full Name</span>
+                  <span class="snap-val">M. Kedara Hamsika</span>
+                </li>
+                <li>
+                  <span class="snap-label">Institution</span>
+                  <span class="snap-val">Ramachandra College of Engineering</span>
+                </li>
+                <li>
+                  <span class="snap-label">Location</span>
+                  <span class="snap-val">Eluru, Andhra Pradesh</span>
+                </li>
+                <li>
+                  <span class="snap-label">Program</span>
+                  <span class="snap-val">B.Tech in Computer Science & Engineering</span>
+                </li>
+                <li>
+                  <span class="snap-label">Current Academic Standing</span>
+                  <span class="snap-val">Second Year Undergraduate</span>
+                </li>
+                <li>
+                  <span class="snap-label">Academic CGPA</span>
+                  <span class="snap-val snap-highlight">9.3 / 10.0</span>
+                </li>
+                <li>
+                  <span class="snap-label">Expected Graduation</span>
+                  <span class="snap-val">2029</span>
+                </li>
+                <li>
+                  <span class="snap-label">Core Interests</span>
+                  <span class="snap-val">Python, DSA, Web Tech, AI & IoT</span>
+                </li>
+              </ul>
+
+              <div class="snapshot-philosophy">
+                <p>"Continuous improvement, disciplined practice, and writing clean code that creates purposeful impact."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SKILLS SECTION (Data-Driven with Category Filter Tabs)
+         ======================================================================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Categorized competencies spanning programming, core computer science, web tooling, and data exploration.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Skills Category Filter">
+          <button class="skill-tab-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="skill-tab-btn" data-filter="programming" role="tab" aria-selected="false">Programming</button>
+          <button class="skill-tab-btn" data-filter="computer_science" role="tab" aria-selected="false">CS Fundamentals</button>
+          <button class="skill-tab-btn" data-filter="development" role="tab" aria-selected="false">Web & Tooling</button>
+          <button class="skill-tab-btn" data-filter="data_ai" role="tab" aria-selected="false">Data & AI</button>
+        </div>
+
+        <!-- Skills Container (Populated via data.js with semantic fallback) -->
+        <div class="skills-grid" id="skillsContainer">
+          <!-- Fallback Semantic HTML in case JS is disabled -->
+          <div class="skill-category-card" data-category="programming">
+            <h3 class="cat-card-title">Programming Languages</h3>
+            <p class="cat-card-desc">Languages used for algorithms, problem solving, and backend logic.</p>
+            <div class="skill-chips-list">
+              <div class="skill-chip">
+                <div class="chip-main">
+                  <span class="chip-dot"></span>
+                  <span class="chip-name">Python</span>
+                </div>
+                <span class="chip-badge">HackerRank Certified</span>
+              </div>
+              <div class="skill-chip">
+                <div class="chip-main">
+                  <span class="chip-dot"></span>
+                  <span class="chip-name">Java</span>
+                </div>
+                <span class="chip-badge">OOP & Collections</span>
+              </div>
+              <div class="skill-chip">
+                <div class="chip-main">
+                  <span class="chip-dot"></span>
+                  <span class="chip-name">C</span>
+                </div>
+                <span class="chip-badge">Systems & Foundations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FEATURED PROJECTS SECTION (With Case Study Modals)
+         ======================================================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Works</span>
+          <h2 class="section-title">Projects Showcase</h2>
+          <p class="section-subtitle">Real-world applications, utility concepts, and research prototypes engineered with practical focus.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsContainer">
+          <!-- Rendered dynamically by script.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CURRENTLY EXPLORING (Learning Journey Milestones)
+         ======================================================================== -->
+    <section id="journey" class="section journey-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Continuous Growth</span>
+          <h2 class="section-title">Currently Exploring</h2>
+          <p class="section-subtitle">Active learning streams, problem-solving habits, and technical curiosities being deepened every day.</p>
+        </div>
+
+        <div class="journey-grid" id="journeyContainer">
+          <!-- Rendered dynamically by script.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         ACHIEVEMENTS & CERTIFICATIONS SECTION
+         ======================================================================== -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Milestones & Recognition</span>
+          <h2 class="section-title">Achievements & Certifications</h2>
+          <p class="section-subtitle">Verified credentials, academic honors, and innovation challenge participation.</p>
+        </div>
+
+        <div class="achievements-timeline" id="achievementsContainer">
+          <!-- Rendered dynamically by script.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         EDUCATION SECTION
+         ======================================================================== -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Foundation</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-subtitle">Academic training, core curriculum, and ongoing bachelor's degree studies.</p>
+        </div>
+
+        <div class="education-card-wrapper">
+          <div class="education-card">
+            <div class="edu-top-row">
+              <div>
+                <span class="edu-timeline-pill">2025 – 2029 (Expected)</span>
+                <h3 class="edu-degree-title">Bachelor of Technology (B.Tech)</h3>
+                <h4 class="edu-major-title">Computer Science and Engineering</h4>
+                <p class="edu-institution-name">Ramachandra College of Engineering, Eluru</p>
+              </div>
+
+              <div class="edu-cgpa-box">
+                <span class="edu-cgpa-score">9.3</span>
+                <span class="edu-cgpa-label">CGPA / 10.0</span>
+              </div>
+            </div>
+
+            <div class="edu-details-body">
+              <p class="edu-desc">
+                Currently in the second year of study, building solid theoretical and practical expertise in core computer science domains. Actively practicing programming paradigms, algorithmic reasoning, and responsive interface design.
+              </p>
+
+              <div class="edu-coursework-group">
+                <h5 class="coursework-heading">Foundational Coursework & Laboratory Subjects:</h5>
+                <div class="coursework-badges">
+                  <span class="course-chip">Data Structures & Algorithms</span>
+                  <span class="course-chip">Object-Oriented Programming (Java)</span>
+                  <span class="course-chip">Problem Solving using C & Python</span>
+                  <span class="course-chip">Discrete Mathematics</span>
+                  <span class="course-chip">Digital Logic & Computer Organization</span>
+                  <span class="course-chip">Web Development Technologies</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CONTACT SECTION
+         ======================================================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Let's build something meaningful together.</h2>
+          <p class="section-subtitle">Open for software internships, student collaborations, open-source projects, and technical dialogues.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Column -->
+          <div class="contact-info-col">
+            <h3 class="contact-card-heading">Get in Touch</h3>
+            <p class="contact-card-sub">
+              Whether you have an internship opportunity, an open-source project to collaborate on, or wish to connect with a passionate CSE undergraduate, my inbox is always open.
+            </p>
+
+            <div class="contact-methods-list">
+              <!-- Email -->
+              <a href="mailto:kedarahamsikamaturi@gmail.com" class="contact-method-card">
+                <div class="method-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="method-label">Direct Email</span>
+                  <span class="method-value">kedarahamsikamaturi@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/kedarahamsikamaturi-web" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                <div class="method-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="method-label">GitHub Profile</span>
+                  <span class="method-value">github.com/kedarahamsikamaturi-web</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                <div class="method-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="method-label">LinkedIn Profile</span>
+                  <span class="method-value">linkedin.com</span>
+                </div>
+              </a>
+
+              <!-- Location -->
+              <div class="contact-method-card static-item">
+                <div class="method-icon-box">
+                  <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="method-label">Campus & Location</span>
+                  <span class="method-value">Eluru, Andhra Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-col">
+            <div class="form-card">
+              <h3 class="form-heading">Send a Message</h3>
+
+              <!-- Notice explaining client-side validation and backend hooking -->
+              <div class="form-integration-callout" role="note">
+                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>
+                  <strong>Form Service Notice:</strong> This form validates your message format locally. To receive messages in your inbox without writing backend code, connect your free endpoint from <a href="https://formspree.io" target="_blank" rel="noopener noreferrer">Formspree</a> or EmailJS.
+                </span>
+              </div>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="userName">Your Name <span class="req">*</span></label>
+                  <input type="text" id="userName" name="name" placeholder="e.g. Kedara Hamsika" required autocomplete="name" />
+                  <span class="error-msg" id="nameError">Please enter your name (at least 2 characters).</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="userEmail">Your Email <span class="req">*</span></label>
+                  <input type="email" id="userEmail" name="email" placeholder="e.g. name@example.com" required autocomplete="email" />
+                  <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="userSubject">Subject <span class="req">*</span></label>
+                  <input type="text" id="userSubject" name="subject" placeholder="e.g. Internship Opportunity / Project Collaboration" required />
+                  <span class="error-msg" id="subjectError">Please provide a subject line.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="userMessage">Your Message <span class="req">*</span></label>
+                  <textarea id="userMessage" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+                  <span class="error-msg" id="messageError">Please enter your message (at least 10 characters).</span>
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn btn-primary btn-full">
+                  <span>Send Message</span>
+                  <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-box">
+          <a href="#home" class="brand-logo">&lt;Kedara Hamsika /&gt;</a>
+          <p class="footer-tagline">
+            Second-Year Computer Science & Engineering student at Ramachandra College of Engineering, Eluru. Turning curiosity into reliable software.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-header">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#journey">Exploring</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-header">Profiles & Credentials</h4>
+          <div class="footer-social-links">
+            <a href="https://github.com/kedarahamsikamaturi-web" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://www.hackerrank.com/certificates/83a133c8a965" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="HackerRank Python Certificate">
+              <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; <span id="currentYear">2026</span> M. Kedara Hamsika. Designed with standard HTML5, CSS3 & JavaScript.</p>
+        <p class="footer-status-tag">CGPA: 9.3 · Ramachandra College of Engineering</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MODALS & DRAWERS
+       ======================================================================== -->
+  
+  <!-- 1. Dedicated Project Case Study Modal -->
+  <div id="caseStudyModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card case-study-modal-card">
+      <div class="modal-header">
+        <div class="modal-header-meta">
+          <span id="csModalStatus" class="cs-status-tag">Status</span>
+          <span id="csModalBadge" class="cs-category-tag">Category</span>
+        </div>
+        <button id="closeCaseStudyBtn" class="modal-close-btn" aria-label="Close case study">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h3 id="csModalTitle" class="cs-modal-title">Project Title</h3>
+        <p id="csModalTagline" class="cs-modal-tagline">Project Tagline</p>
+
+        <div class="cs-tags-row" id="csModalTechTags"></div>
+
+        <div class="cs-section">
+          <h4 class="cs-section-title">The Problem It Aims to Solve</h4>
+          <p id="csModalProblem" class="cs-section-desc"></p>
+        </div>
+
+        <div class="cs-section">
+          <h4 class="cs-section-title">Architecture & Solution</h4>
+          <p id="csModalSolution" class="cs-section-desc"></p>
+        </div>
+
+        <div class="cs-section">
+          <h4 class="cs-section-title">Contribution & Development Stage</h4>
+          <p id="csModalContribution" class="cs-section-desc"></p>
+        </div>
+
+        <div class="cs-section">
+          <h4 class="cs-section-title">Key Engineering Highlights</h4>
+          <ul id="csModalHighlights" class="cs-highlights-list"></ul>
+        </div>
+      </div>
+
+      <div class="modal-footer" id="csModalFooterLinks">
+        <!-- Buttons populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Interactive Resume Viewer Modal -->
+  <div id="resumeModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card resume-modal-card">
+      <div class="modal-header">
+        <div class="modal-header-meta">
+          <span class="cs-status-tag">Academic Profile</span>
+          <span class="cs-category-tag">Resume Snapshot</span>
+        </div>
+        <button id="closeResumeBtn" class="modal-close-btn" aria-label="Close resume viewer">&times;</button>
+      </div>
+
+      <div class="modal-body resume-body">
+        <div class="resume-sheet">
+          <div class="resume-sheet-header">
+            <div>
+              <h2 class="res-name">M. Kedara Hamsika</h2>
+              <p class="res-role">Second-Year B.Tech Computer Science & Engineering Student</p>
+              <p class="res-contact">Eluru, Andhra Pradesh | kedarahamsikamaturi@gmail.com | github.com/kedarahamsikamaturi-web</p>
+            </div>
+            <div class="res-cgpa-stamp">
+              <span class="stamp-num">9.3</span>
+              <span class="stamp-label">CGPA</span>
+            </div>
+          </div>
+
+          <div class="res-divider"></div>
+
+          <div class="res-block">
+            <h4 class="res-heading">Education</h4>
+            <div class="res-row">
+              <strong>Ramachandra College of Engineering, Eluru</strong>
+              <span class="res-date">2025 – 2029 (Expected)</span>
+            </div>
+            <p>B.Tech in Computer Science and Engineering · <strong>CGPA: 9.3 / 10.0</strong></p>
+          </div>
+
+          <div class="res-block">
+            <h4 class="res-heading">Technical Certifications</h4>
+            <div class="res-row">
+              <strong>HackerRank Python (Basic) Skill Certification</strong>
+              <span class="res-date">October 20, 2026</span>
+            </div>
+            <p>Verification ID: <a href="https://www.hackerrank.com/certificates/83a133c8a965" target="_blank" rel="noopener noreferrer" class="link-inline">83a133c8a965</a></p>
+          </div>
+
+          <div class="res-block">
+            <h4 class="res-heading">Technical Competencies</h4>
+            <p><strong>Languages:</strong> Python, Java, C</p>
+            <p><strong>Core CS:</strong> Data Structures & Algorithms, Object-Oriented Programming, Discrete Math</p>
+            <p><strong>Web & Tools:</strong> HTML5, CSS3, JavaScript, REST APIs, Git, GitHub, VS Code</p>
+          </div>
+
+          <div class="res-block">
+            <h4 class="res-heading">Key Projects</h4>
+            <p><strong>Weather Now:</strong> Location-based meteorological dashboard using Open-Meteo REST API.</p>
+            <p><strong>CollegeDock (Concept):</strong> Integrated student utility dashboard for campus routines.</p>
+            <p><strong>Bhoomi Sahayak (Research Prototype):</strong> AI & IoT smart agriculture advisory concept.</p>
+          </div>
+
+          <div class="res-block">
+            <h4 class="res-heading">Co-Curricular & Leadership</h4>
+            <p>• Rashtriya Innovation Challenge Participant (RTIH, Andhra Pradesh)</p>
+            <p>• RCE Ambassador 2K26 Activities & Campus Technical Engagement</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="printResumeBtn" class="btn btn-secondary btn-sm">
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print / Save as PDF</span>
+        </button>
+        <a href="mailto:kedarahamsikamaturi@gmail.com?subject=Resume%20Inquiry%20for%20M.%20Kedara%20Hamsika" class="btn btn-primary btn-sm">
+          <span>Request Full Resume</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Form Submission Feedback Toast -->
+  <div id="toastMessage" class="toast-container" role="status" aria-live="polite">
+    <div class="toast-card">
+      <div class="toast-icon">✓</div>
+      <div class="toast-content">
+        <h5 class="toast-title">Message Received!</h5>
+        <p class="toast-desc">Form validation passed successfully.</p>
+      </div>
+      <button id="closeToastBtn" class="toast-close" aria-label="Dismiss">&times;</button>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Scroll back to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- External Data File & Main Application Script -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
